@@ -1,0 +1,82 @@
+:root {
+  --color-blue-medium: #8fe2e4;
+  --color-purple: #632ce7;
+  --color-gray: #ccc;
+  --color-gray-medium: #f8f9fa;
+  --color-yellow: #fac32c;
+  --color-orange: #FF590B;
+}
+/*GENERAL*/
+
+html{
+  scroll-behavior: smooth;
+}
+
+.my-class-button{
+  background-color: var(--color-orange);
+  display: none;
+  border-radius: 15%;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.container > .row{
+  margin-bottom: 3rem;
+}
+
+/*NAV*/
+
+.navbar-brand > img{
+  width: 55px;
+}
+
+.navbar-main .active{
+  text-decoration: underline var(--color-orange);
+  text-underline-offset: 8px;
+}
+
+/*CONTAINER*/
+
+/*-- HEADER --*/
+.header-main{
+  height: 100vh;
+}
+
+.my-class-photo{
+  border-radius: 5%;
+}
+
+/*CORRER EL CONTENIDO DEL SECTION AL PRESIONAR SOBRE
+UNA DE LAS OPCIONES DE LA BARRA DE NAVEGACIÓN*/
+
+header[id]{
+  scroll-margin-top: 110px;
+}
+
+section[id]{
+  scroll-margin-top: 110px;
+}
+
+/*-- SEC SOBRE MI --*/
+
+.icon-service{
+  --box-size: 70px;
+  width: var(--box-size);
+  height: var(--box-size);
+  padding: 10px;
+}
+
+.my-class-photos-sobremi{
+  border-radius: 5%;
+}
+
+@media screen and (max-width: 425px){
+  body{
+    margin-top: 4rem;
+  }
+  .header-main{
+    height: initial; /*el alto que definan sus elementos hijos*/
+  }
+}
