@@ -4,22 +4,12 @@
   --color-gray: #ccc;
   --color-gray-medium: #f8f9fa;
   --color-yellow: #fac32c;
-  --color-orange: #FF590B;
+  --color-orange: #FF760B;
 }
 /*GENERAL*/
 
 html{
   scroll-behavior: smooth;
-}
-
-.my-class-button{
-  background-color: var(--color-orange);
-  display: none;
-  border-radius: 15%;
-  cursor: pointer;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
 }
 
 .container > .row{

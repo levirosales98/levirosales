@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" dir="auto">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <title>Leví Rosales</title>
@@ -20,38 +20,26 @@
     />
     <!-- CSS Main -->
     <link rel="stylesheet" href="css/main.css"/>
-    <!-- JQuery -->
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <!-- JavaScript-->
-    <script src="js/script.js"></script>
   </head>
   <body class="bg-light position-relative" data-bs-spy="scroll" data-bs-target="#navbar-scroll-spy">
-    <!--back-top-button-->
-    <span class="my-class-button"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-      fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
-      <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2
-      2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3
-      3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
-    </svg>
-    </span>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark navbar-main" id="navbar-scroll-spy">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-dark navbar-main" id="navbar-scroll-spy">
       <div class="container">
         <a href="index.html" class="navbar-brand"> <!--Para hacer más pequeño el memoji se aplica a esta clase-->
           <img src="img/logo.png" alt="Leví Rosales">
         </a>
         <!--collapse button-->
-        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav"
+        <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav"
         aria-expanded="false" aria-label="Barra de navegación">
           <span class="navbar-toggler-icon"><!--Permite insertar el ícono para este botón--></span> 
         </button>
         <!--items-->
-        <div class="navbar-collapse collapse" id="mainNav">
+        <div class="collapse navbar-collapse" id="mainNav">
           <div class="nav ms-auto flex-column flex-md-row"> <!--ms-auto manda los items a la derecha-->
-            <a href="#secInicio" class="js-scroll-trigger nav-link text-light active show">Inicio</a>
-            <a href="#secSobreMi" class="js-scroll-trigger nav-link text-light">Sobre mi</a>
-            <a href="#secPortafolio" class="js-scroll-trigger nav-link text-light">Portafolio</a>
-            <a href="#secAlbum" class="js-scroll-trigger nav-link text-light">Álbum</a>
-            <a href="#secContacto" class="js-scroll-trigger nav-link text-light">Contacto</a>
+            <a href="#secInicio" class="nav-link text-light active show">Inicio</a>
+            <a href="#secSobreMi" class="nav-link text-light">Sobre mi</a>
+            <a href="#secPortafolio" class="nav-link text-light">Portafolio</a>
+            <a href="#secAlbum" class="nav-link text-light">Álbum</a>
+            <a href="#secContacto" class="nav-link text-light">Contacto</a>
           </div>
         </div>
       </div>
@@ -75,7 +63,7 @@
         </div>
       </header>
       <hr/>
-      <section class="row justify-content-center text-center text-md-start" id="secSobreMi">
+      <section class="row justify-content-center text-justify text-md-start" id="secSobreMi">
         <!--titulo-->
         <h2 class="col-md-4 text-center display-4">
           Sobre Mi
@@ -83,7 +71,7 @@
         <main role="main">
           <div class="row about-container">
             <div class="col-lg-6 content order-lg-1 order-1">
-              <h3>Estudios</h3>
+              <h3 class="text-center text-lg-start">Estudios</h3>
               <p>
                 Estudio Ingeniería en Sistemas en la universidad y estoy en mi último año del pensum. Durante
                 todo este trayecto me he especializado en el desarrollo de software; de hecho en mis estudios
@@ -103,7 +91,7 @@
               <img src="img/alb_guitarra1.JPG" class="img-fluid my-class-photos-sobremi" alt="Leví Rosales">
             </div>
             <div class="col-lg-6 content order-lg-2 order-1"> <!-- pt-5 baja el texto -->
-              <h3>Creyente</h3>
+              <h3 class="text-center text-lg-start">Creyente</h3>
               <p>
                 Cuando tenía 16 años comprendí la salvación que tengo en Jesús, desde esa fecha hasta aquí trato
                 de vivir una vida consagrada obedeciendo los mandamientos de Dios Jehová, también trato de ser
@@ -117,7 +105,7 @@
           <br>
           <div class="row about-container">
             <div class="col-lg-6 content order-lg-1 order-1">
-              <h3>Kenpo Karate y Kick Boxing</h3>
+              <h3 class="text-center text-lg-start">Kenpo Karate y Kick Boxing</h3>
               <p>
                 Empecé practicando Hawaiian Kenpo Karate en el 2012. A los cuatro meses empecé a practicar Kick
                 Boxing a los que simultáneamente entrenaba ambos y fuí a varios torneos muy buenos. En Kenpo Karate
@@ -138,7 +126,7 @@
               <img src="img/airpods.jpeg" class="img-fluid my-class-photos-sobremi" alt="Leví Rosales">
             </div>
             <div class="col-lg-6 content order-lg-2 order-1">
-              <h3>Música</h3>
+              <h3 class="text-center text-lg-start">Música</h3>
               <p>
                 La música es algo con lo que me identifio. Estoy escuchando música todo el tiempo, mientras
                 estudio, trabajo o conduzco. No tengo un género con el cual identificarme, simplemente
@@ -168,14 +156,14 @@
         </main>
       </section>
       <hr/>
-      <section class="row justify-content-center text-center text-md-start" id="secPortafolio">
+      <section class="row justify-content-center text-justify text-md-start" id="secPortafolio">
         <!--titulo-->
         <h2 class="col-md-4 text-center display-4">
           Portafolio
         </h2>
         <!--info-->
         <div class="col-10 col-md-10">
-          <p class="text-muted fw ligth">
+          <p class="text-center fw ligth">
             Estoy enfocado en el sector de informática en el desarollo de software. Te dejo un botón para ver mis proyectos
             de programación con código libre en GitHub y un botón para ver mis títulos, certificaciones y diplomas.
           </p>
@@ -187,7 +175,7 @@
         <main role="main">
           <div class="row about-container">
             <div class="col-lg-6 content order-lg-1 order-1">
-              <h3>Desarrollo de software</h3>
+              <h3 class="text-center text-lg-start">Desarrollo de software</h3>
               <p>
                 Desarrollo aplicaciones web y páginas web informativas. Mi habilidad principal para programar en
                 Back End es con el lenguaje PHP y su Framework Laravel, para la parte Front End utilizo HTML, Bootstrap,
@@ -207,7 +195,7 @@
               <img src="img/ubuntu.png" class="img-fluid my-class-photos-sobremi" alt="Leví Rosales">
             </div>
             <div class="col-lg-6 content order-lg-2 order-1">
-              <h3>Cloud Computing IaaS</h3>
+              <h3 class="text-center text-lg-start">Cloud Computing IaaS</h3>
               <p>
                 He desplegado aplicaciones en el modelo de Cloud Computing IaaS para aplicaciones. Estos servicios son con VPS
                 con sistemas operativos basados en el núcleo de Linux regularmente Ubuntu o Debian. Dentro de estas infraestructuras
@@ -218,7 +206,7 @@
           <br>
           <div class="row about-container">
             <div class="col-lg-6 content order-lg-1 order-1">
-              <h3>Instructor</h3>
+              <h3 class="text-center text-lg-start">Instructor</h3>
               <p>
                 Soy instructor de electrónica aplicada en el sector industrial, informática y telecomunicaciones para la carrera
                 de Perito en Electrónica y Dispositivos Digitales y también imparto el curso de programación para la carrera de
@@ -236,7 +224,7 @@
               <img src="img/google_admin.png" class="img-fluid my-class-photos-sobremi" alt="Leví Rosales">
             </div>
             <div class="col-lg-6 content order-lg-2 order-1">
-              <h3>Cloud Computing SaaS</h3>
+              <h3 class="text-center text-lg-start">Cloud Computing SaaS</h3>
               <p>
                 He desplegado herramientas de productividad y colaboración con el modelo Cloud Computing SaaS para organizaciones
                 que buscan optimizar sus procesos de una manera digital. Google Workspace y Microsoft Centers son consolas de
@@ -247,11 +235,11 @@
           <br>
           <div class="row about-container">
             <div class="col-lg-6 content order-lg-1 order-1">
-              <h3>Redes</h3>
+              <h3 class="text-center text-lg-start">Redes</h3>
               <p>
                 He realizado instalaciones de cableado estructurado, construcción y administración de redes. En estas instalaciones
                 he utilizado cables CAT6 para tramos largos y cables CAT5e para tramos más pequeños o de uso más continuo por el usuario,
-                también dispositivos como routers y switches plug and play.
+                también dispositivos como routers y switches.
               </p>
             </div>
             <div class="col-lg-6 order-lg-2 order-2">
@@ -663,5 +651,7 @@
             crossorigin="anonymous"
     >
     </script>
+    <!-- JS Main -->
+    <script src="js/script.js"></script>
   </body>
 </html>
