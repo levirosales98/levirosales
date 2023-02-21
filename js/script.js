@@ -1,6 +1,11 @@
+const fecha = new Date();
+var footer = "Copyright © " + fecha.getFullYear() + " Leví Rosales. All Rights Reserved.";
+console.log(footer);
+document.getElementById("DevuelveTextoFooterConAnio").innerHTML = footer;
+
 //collapse hamburger menu after do click
-$('.js-scroll-trigger').click(function() {
-    $('.navbar-collapse').collapse('hide');
+('.js-scroll-trigger').click(function() {
+    ('.navbar-collapse').collapse('hide');
   });
 
 //back-top
