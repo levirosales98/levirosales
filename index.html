@@ -537,27 +537,24 @@
       <section class="row justify-content-center text-center text-md-start" id="secContacto">
         <h2 class="col-md-4 text-center display-4">Contacto</h2>
         <div class="col-10 col-md-10">
-          <p clas="text-muted fw ligth">
-            <strong>
-              No funcional para este sitio web.
-            </strong>
-          </p>
-          <form action="sendData.php" method="post">
+          <form action="https://formsubmit.co/1fe48127b59ef174ee14bf14c102f2a6" method="post">
             <div class="mb-3">
               <label for="name" class="form-label">Nombre</label>
-              <input type="text" name="name" class="form-control" id="name" required placeholder="Juanito Pérez">
+              <input type="text" name="name" class="form-control" required placeholder="Juanito Pérez">
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Correo</label>
-              <input type="email" name="email" class="form-control" id="email" required placeholder="juanito.perez@ejemplo.com">
+              <input type="email" name="email" class="form-control" required placeholder="juanito.perez@ejemplo.com">
             </div>
             <div class="mb-3">
-              <label for="message" class="form-label">Mensaje</label>
-              <textarea name="message" class="form-control" id="message" rows="3" required></textarea>
+              <label for="comments" class="form-label">Mensaje</label>
+              <textarea name="comments" class="form-control" rows="3" required></textarea>
             </div>
             <div class="col-12">
               <button class="btn btn-success" type="submit">Enviar</button>
             </div>
+            <input type="hidden" name="_next" value="https://levirosales98.github.io/levirosales/#secContacto">
+            <input type="hidden" name="_captcha" value="false">
           </form>
         </div>
       </section>
