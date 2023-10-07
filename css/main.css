@@ -1,3 +1,12 @@
+body {
+  background-color: black; /* Establece el fondo en negro */
+  color: white; /* Establece el color del texto en blanco */
+}
+
+.name-style{
+  color: #0073e6;
+}
+
 :root {
   --color-blue-medium: #8fe2e4;
   --color-purple: #632ce7;
@@ -22,10 +31,11 @@ html{
   width: 55px;
 }
 
+/*
 .navbar-main .active{
   text-decoration: underline var(--color-orange);
   text-underline-offset: 8px;
-}
+}*/
 
 /*CONTAINER*/
 
@@ -69,4 +79,14 @@ section[id]{
   .header-main{
     height: initial; /*el alto que definan sus elementos hijos*/
   }
+}
+
+/* Alinea los labes a la izquierda en cualquier tamaño de pantalla*/
+.ss-labels{
+  text-align: left;
+}
+
+/* Fondo negro para las tarjetas de las fotos*/
+.card{
+  background-color: black;
 }
