@@ -53,10 +53,7 @@
         <!--Tamñaos de pantalla pequeña y extra pequeña tendra tamaño de 12 columnas-->
         <div class="col-md-7">
           <h1 class="display-2 name-style">W. Leví</h1>
-          <p> <!--text-capitalize sirve para poner todas las letras en mayúsculas-->
-            ¡Hola! Que bueno que visites mi sitio web. Mi nombre es Leví Rosales, tengo 27 años y soy de Guatemala; en este 
-            espacio puedes saber más de mi, que me gusta, que estudio y en que trabajo. Te dejo un formulario al cual 
-            puedes acceder rápidamente desde arriba si te interesa contactarme. Disfruta navegar por aquí 😃
+          <p id="DescripcionBienvenida"> <!--text-capitalize sirve para poner todas las letras en mayúsculas-->
           </p>
         </div>
         <!--Para la segunda columna el tamaño de pantalla pequeño y extra pequeño será de 8 y medianas hacia adelante será de 4-->
@@ -111,9 +108,9 @@
               <h3 class="text-center text-lg-start">Almasilos, S.A.</h3>
               <p>
                 El sistema desarrollado para Almasilos, S.A. está diseñado a la medida para gestionar y optimizar el
-                control de las operaciones de la empresa, utilizando una arquitectura basada en microservicios desplegados
+                control de las operaciones de la empresa, utilizando una arquitectura basada en micro-servicios desplegados
                 en un clúster de Kubernetes. Este enfoque permite escalabilidad, resiliencia y una fácil administración
-                de los servicios. Se implementaron contenedores Docker tanto para la aplicación web como para los servicios
+                de los servicios. Se implementaron contenedores Docker tanto para la aplicación web como para los micro-servicios
                 back-end, mientras que la base de datos MySQL asegura un manejo eficiente de la información. Además, el
                 sistema incorpora un balanceador de carga para distribuir el tráfico de manera equitativa entre los nodos,
                 garantizando un rendimiento óptimo, incluso durante picos de demanda. Por último, se ha configurado un firewall
@@ -157,8 +154,8 @@
                 el desarrollo de software. Me gusta ser autodidacta y buscar más contenido para aprender.
                 Actualmente estoy estudiando una maestría en seguridad informática, especializandome en ciberseguridad,
                 auditoría y cumplimiento normativo, seguridad de redes, desarrollo seguro, análisis forense, gestión
-                de incidentes y diseño de planes de continuidad de negocios. También refuerzo mis conocimientos en
-                JavaScript, jQuery, Ajax, gRPC y Azure DevOps.
+                de incidentes y diseño de planes de continuidad de negocios. También estoy aprendiendo Angular, CI/CD,
+                patrones de comunicación back-end y electrónica.
               </p>
               <div class="d-inline" style="margin-left: 3px;">
                 <a href="https://drive.google.com/drive/folders/1C20ewzjYjy0dDK_o4eUeV0hNmqPTIP2H?usp=sharing" class="btn btn-warning" target="_blank" style="margin-bottom: 20px;">
@@ -192,24 +189,16 @@
           <br>
           <div class="row about-container">
             <div class="col-lg-6 content order-lg-2 order-1">
-              <h3 class="text-center text-lg-start">DevOps</h3>
+              <h3 class="text-center text-lg-start">SRE Site Reliability Engineering</h3>
               <p>
-                He utilizado Azure DevOps para versionamiento de código, despliegue de aplicaciones con el modelo de 
-                Cloud Computing PaaS usando Azure Pipelines, gestión de paquetes Artifacts y Releases.
-              </p>
-              <p>
-                He desplegado aplicaciones, servicios, bases de datos y VDIs como micro servicios contenedorizadas con Docker.
-              </p>
-              <p>
-                También he desplegado clústeres de Kubernetes configurando un entorno que aloja contenedores Docker, 
-                desde balanceadores de carga, hasta aplicaciones específicas, optimizando su despliegue y asegurando 
-                la eficiencia operativa. Esta administración implica la gestión de recursos, la orquestación de 
-                contenedores y la implementación de mejores prácticas de seguridad para garantizar un entorno estable 
-                y seguro, facilitando la entrega eficiente y confiable de las aplicaciones.
-              </p>
-              <p>
-                Los sistemas operativos utilizados para despliegue de aplicaciones con Azure DevOps, Docker y Kubernetes
-                fueron Unix y Linux.
+                He utilizado Azure DevOps y GitHub para el control de versiones, pipelines/workflows, releases, gestión de
+                paquetes, entre otros. He desplegado aplicaciones, servicios, bases de datos y VDIs como micro-servicios
+                contenedorizados con Docker, he gestionado clústeres de Kubernetes configurando entornos que alojan pods
+                con contenedores de sistemas operativos, servicios y hasta aplicaciones dedicadas, optimizando el despliegue
+                y asegurando la eficiencia operativa. Esta administración incluye la gestión de recursos, orquestación de
+                contenedores y la implementación de buenas prácticas de seguridad para garantizar un entorno estable y
+                seguro con la facilidad de una entrega confiable y eficiente de las aplicaciones. Los sistemas operativos
+                que he utilizado son Unix y Linux.
               </p>
             </div>
             <div class="col-lg-6 order-lg-1 order-2">
@@ -224,12 +213,14 @@
                 He creado aplicaciones bancarias, cardex, carritos de compras y páginas web. He utilizando la arquitectura
                 de microservicios, implementado ASP.NET API REST que maneja la lógica del negocio y ASP.NET MVC para crear
                 vistas dinámicas con la que el usuario interactúa en el navegador web. Mi habilidad principal es el desarrollo
-                de software web back-end. Los lenguajes de programación que utilizo son C#, JavaScript, jQuery, Ajax, PHP,
-                VB, CSS. También domino los lenguajes de programación C y C++ para firmwares.
+                de software web back-end. Los lenguajes de programación que utilizo son C#, TypeScript, JavaScript, jQuery, Ajax, PHP,
+                VB, CSS. También domino los lenguajes de programación C y C++ para firmwares. He desarrollado pruebas
+                unitarias para aislar los componentes de las aplicaciones y validar los resultados de los métodos y clases con
+                MSTest.
               </p>
             </div>
             <div class="col-lg-6 content order-lg-1 order-2">
-              <img src="img/visual_studio.png" class="img-fluid my-class-photos-sobremi" alt="Leví Rosales">
+              <img src="img/desarrollo.png" class="img-fluid my-class-photos-sobremi" alt="Leví Rosales">
             </div>
           </div>
           <br>
@@ -268,10 +259,10 @@
             <div class="col-lg-6 content order-lg-2 order-1">
               <h3 class="text-center text-lg-start">Instructor</h3>
               <p>
-                Fuí instructor de electrónica aplicada en el sector industrial, informática y telecomunicaciones para la carrera
-                de Perito en Electrónica y Dispositivos Digitales y la carrera de Bachillerato en Computación con Orientación 
-                Científica. Impartiendo enseñanza sobre física electromagnética, electrónica analógica, electrónica digital, 
-                arquitectura de computadores, telecomunicaciones, programación de micro controladores PIC y Arduino, diseño digital, ensamble de PCB, algoritmos de procesamiento, bases de datos y redes.
+                Fuí instructor de electrónica y programación para la carrera de Perito en Electrónica y Bachillerato en Computación, 
+                con un enfoque en el sector industrial, informática y telecomunicaciones. Impartí cursos de física electromagnética,
+                electrónica analógica, electrónica digital, arquitectura de computadores, telecomunicaciones, programación de micro
+                controladores PIC y Arduino, diseño digital, ensamble de PCB, algoritmos de procesamiento, bases de datos y redes.
               </p>
             </div>
             <div class="col-lg-6 order-lg-1 order-2">
@@ -279,18 +270,6 @@
             </div>
           </div>
           <br>
-          <div class="row about-container">
-            <div class="col-lg-6 order-lg-2 order-2">
-              <img src="img/Unit_tests.png" class="img-fluid my-class-photos-sobremi" alt="Leví Rosales">
-            </div>
-            <div class="col-lg-6 content order-lg-1 order-1">
-              <h3 class="text-center text-lg-start">Aseguramiento de calidad</h3>
-              <p>
-                He creado pruebas unitarias para aislar los componentes de las aplicaciones y validar los resultados
-                de los métodos y clases con MSTest. También he creado pruebas automatizadas con Selenium.
-              </p>
-            </div>
-          </div>
         </main>
       </section>
 
@@ -300,22 +279,22 @@
         <main role="main">
           <br>    
           <div class="row about-container">
-            <div class="col-lg-6 order-lg-1 order-2">
-              <img src="img/alb_guitarra1.JPG" class="img-fluid my-class-photos-sobremi" alt="Leví Rosales">
+            <div class="col-lg-6 order-lg-2 order-2">
+              <img src="img/grabacion_iglesia.jpeg" class="img-fluid my-class-photos-sobremi" alt="Leví Rosales">
             </div>
-            <div class="col-lg-6 content order-lg-2 order-1"> <!-- pt-5 baja el texto -->
+            <div class="col-lg-6 content order-lg-1 order-1"> <!-- pt-5 baja el texto -->
               <h3 class="text-center text-lg-start">Creyente</h3>
               <p>
                 Cuando tenía 16 años comprendí la salvación que tengo en Jesús. Me gusta mucho la música
                 y desde los 10 años empecé a involucrarme en aprender instrumentos, comenzando desde la batería, 
-                bajo, guitarra acústica y canto. Sigo tratando de mejorar en todo, y eso es lo bonito, nunca 
+                bajo, guitarra acústica, canto y teclado. Sigo tratando de mejorar en todo, y eso es lo bonito, nunca 
                 dejo de aprender. Actualmente estoy involucrado en el ministerio de la alabanza en la iglesia.
               </p>
             </div>
           </div>
           <br><br>
           <div class="row about-container">
-            <div class="col-lg-6 content order-lg-1 order-1">
+            <div class="col-lg-6 content order-lg-2 order-1">
               <h3 class="text-center text-lg-start">Kenpo Karate y Kick Boxing</h3>
               <p>
                 Empecé practicando Hawaiian Kenpo Karate en el 2012. A los cuatro meses empecé a practicar Kick
@@ -326,32 +305,32 @@
                 conseguí 👊🏾
               </p>
             </div>
-            <div class="col-lg-6 order-lg-2 order-2">
+            <div class="col-lg-6 order-lg-1 order-2">
               <img src="img/karate6.jpeg" class="img-fluid my-class-photos-sobremi" alt="Leví Rosales">
             </div>
           </div>
           <br><br>
           <div class="row about-container">
-            <div class="col-lg-6 order-lg-1 order-2">
+            <div class="col-lg-6 order-lg-2 order-2">
               <img src="img/nintendo-switch.jpg" class="img-fluid my-class-photos-sobremi" alt="Leví Rosales">
             </div>
-            <div class="col-lg-6 content order-lg-2 order-1">
+            <div class="col-lg-6 content order-lg-1 order-1">
               <h3 class="text-center text-lg-start">Videojuegos</h3>
               <p>
                 El que más me ha gustado es Zelda Tears Of The Kingdom. Es de acción y aventura como una secuela
                 directa de Zelda Breath of the Wild. Se sumerge en el reino de Huryle, un vasto mundo abierto lleno
                 de misterios, retos y aventuras pero ahora expandido hacia los cielos y las profundidades del
-                subsuelo, ofreciendo nuevas áreas por explorar ⚔🛡️
+                subsuelo ⚔🛡️
               </p>
               <br>
             </div>
           </div>
           <br><br>
           <div class="row about-container">
-            <div class="col-lg-6 order-lg-2 order-2">
+            <div class="col-lg-6 order-lg-1 order-2">
               <img src="img/airpods.jpeg" class="img-fluid my-class-photos-sobremi" alt="Leví Rosales">
             </div>
-            <div class="col-lg-6 content order-lg-1 order-1">
+            <div class="col-lg-6 content order-lg-2 order-1">
               <h3 class="text-center text-lg-start">Música</h3>
               <p>
                 La música es algo con lo que me identifio. Estoy escuchando música todo el tiempo, mientras
